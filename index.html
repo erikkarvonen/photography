@@ -1,1 +1,15 @@
-<h1> Photos throughout the years </h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Photo Gallery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>My Travel Photography</h1>
+    <ul>
+        {% for album in albums %}
+            <li><a href="{{ url_for('album', name=album) }}">{{ album }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
