@@ -2,13 +2,13 @@
 <html>
 <head>
     <title>{{ album_name }}</title>
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <h1>{{ album_name }}</h1>
+    <a href="index.html">Back to albums</a>
     <div>
-        {% for image in images %}
-            <img src="{{ image }}" alt="Photo">
-        {% endfor %}
+        {{ images }}
     </div>
 </body>
 </html>
