@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ album_name }}</title>
+</head>
+<body>
+    <h1>{{ album_name }}</h1>
+    <div>
+        {% for image in images %}
+            <img src="{{ image }}" alt="Photo">
+        {% endfor %}
+    </div>
+</body>
+</html>
